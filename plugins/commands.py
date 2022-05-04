@@ -11,11 +11,17 @@ async def start(c, m):
     owner_username = owner.username if owner.username else 'SL_BOTS_TM'
 
     # start text
-    text = f"""Hey! {m.from_user.mention(style='md')},
+    text = f"""😎Hey! {m.from_user.mention(style='md')},
 
- ** I am Font Gen Bot**
+ ** I am Font Gen Bot**with many advanced features. 
+ Just send your Text and see what happens...😁
+ 
+ 
+Powered by : @SLBotOfficial
+Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/SL_BOTS_TM)
 
-`I can help you to get fonts. Just send me some text.`
+
+
 """
 
     # Buttons
@@ -66,6 +72,8 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('H̆̈ă̈p̆̈p̆̈y̆̈', callback_data='style+happy'),
         InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
         ],[
+        InlineKeyboardButton('Join Our Chanel', url=f"https://t.me/SLBotOfficial"),
+        ],[
         InlineKeyboardButton('Next ➡️', callback_data="nxt")
     ]]
     if not cb:
@@ -101,7 +109,9 @@ async def nxt(c, m):
             ],[
             InlineKeyboardButton('ዪሀክቿነ', callback_data='style+qvnes'),
             InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
-            InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
+            InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen'),
+            ],[
+            InlineKeyboardButton('Join Our Chanel', url=f"https://t.me/SLBotOfficial"),
             ],[
             InlineKeyboardButton('⬅️ Back', callback_data='nxt+0')
         ]]
