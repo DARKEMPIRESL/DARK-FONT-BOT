@@ -1,2 +1,5 @@
 tgcrypto
 pyrogram==1.2.9
+pyrogram
+python-dotenv
+redis
