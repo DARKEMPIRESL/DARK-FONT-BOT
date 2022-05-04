@@ -13,22 +13,31 @@
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
       "value": "ANYTHING"
     },
-    "BOT_TOKEN": {
-      "description": "Your bot token, as a string.",
-      "value": ""
+"BOT_TOKEN": {
+            "description": "Your Bot token from @Botfather",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Your API_ID from https://my.telegram.org/apps ",
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Telegram User id of Owner",
+            "value": ""
+        },
+        "REDIS_URI": {
+            "description": "Redis URL, Get it from redislabs.com",
+            "value": ""
+        },
+        "REDIS_PASS": {
+            "description": "Redis Password, Get it from redislabs.com",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API_HASH from https://my.telegram.org/apps",
+            "value": ""
+        }
     },
-    "API_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
-    },
-    "OWNER_ID": {
-      "description": "give your telegram user id here",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
-    }
   },
   "addons": [
   ],
