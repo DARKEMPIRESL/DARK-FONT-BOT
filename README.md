@@ -19,7 +19,8 @@ Put the Neccesory Tokens Here when Deploy<br>
 
 ## Deployment
 
-<a href="https://heroku.com/deploy/"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+<a href="https://heroku.com/deploy?template=https://github.com/DARKEMPIRESL/DARK-FONT-BOT"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a>
+     
 ## Issues 
 
 [Submit Issues](https://github.com/DARKEMPIRESL/DARK-FONT-BOT/issues)
