@@ -2,13 +2,14 @@ import os
 from config import Config
 from .fonts import Fonts
 from pyrogram import Client, filters
+from vars import var
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 @Client.on_message(filters.command('start'))
 async def start(c, m):
     owner = await c.get_users(int(Config.OWNER_ID))
-    owner_username = owner.username if owner.username else 'SL_BOTS_TM'
+    owner_username = owner.username if owner.username else 'ImDark_Empire'
 
     # start text
     text = f"""😎Hey! {m.from_user.mention(style='md')},
@@ -18,7 +19,7 @@ async def start(c, m):
  
  
 Powered by : @SLBotOfficial
-Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/SL_BOTS_TM)
+Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/ImDark_Empire)
 
 
 
