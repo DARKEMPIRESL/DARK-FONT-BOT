@@ -25,14 +25,6 @@
             "description": "Telegram User id of Owner",
             "value": ""
         },
-        "REDIS_URI": {
-            "description": "Redis URL, Get it from redislabs.com",
-            "value": ""
-        },
-        "REDIS_PASS": {
-            "description": "Redis Password, Get it from redislabs.com",
-            "value": ""
-        },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps",
             "value": ""
