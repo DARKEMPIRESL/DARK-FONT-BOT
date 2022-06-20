@@ -1,6 +1,6 @@
 import pyrogram
 
-from vars import var
+import config
 
 import logging
 logging.basicConfig(level=logging.DEBUG,
@@ -9,7 +9,6 @@ logger = logging.getLogger(__name__)
 
 import os
 
-from config import Config
 from pyrogram import Client, idle
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
