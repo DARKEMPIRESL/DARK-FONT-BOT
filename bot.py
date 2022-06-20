@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-import os
+
 
 from pyrogram import Client, idle
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -19,9 +19,9 @@ if __name__ == "__main__" :
     )
     app = Client(
         "ShowJson",
-        bot_token=Config.BOT_TOKEN,
-        api_id=var.API_ID,
-        api_hash=var.API_HASH,
+        bot_token=config.BOT_TOKEN,
+        api_id=config.API_ID,
+        api_hash=config.API_HASH,
         plugins=dict(root="plugins"),
         workers=100
     )
