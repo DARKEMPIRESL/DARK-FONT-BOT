@@ -1,6 +1,7 @@
 import os
 import random
-from config import Config
+from config import OWNER_ID
+from Data import Data
 from .fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
@@ -8,7 +9,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 @Client.on_message(filters.command('start'))
 async def start(c, m):
-    owner = await c.get_users(int(Config.OWNER_ID))
+    owner = await c.get_users(int(OWNER_ID))
     owner_username = owner.username if owner.username else 'ImDark_Empire'
 
     # start text
@@ -26,15 +27,7 @@ Powered by :[Team SL Bots🇱🇰](https://t.me/SLBotOfficial)
 """
 
     # Buttons
-    buttons = [
-        [
-            InlineKeyboardButton('Developer', url=f"https://t.me/ImDark_Empire"),
-            InlineKeyboardButton('Join Our Chanel', url=f"https://t.me/SLBotOfficial")
-        ],
-        [
-            InlineKeyboardButton('Follow me on Github', url=f"https://github.com/DARKEMPIRESL")
-        ]
-    ]
+    buttons = Data.buttons
     
     STICKERS = ["CAACAgUAAxkBAAEBH8Bin1OzuCzYzLOa9ZBiwK7026VX_QACCwUAAqp1AAFVU_BXBmgkKpwkBA", "CAACAgUAAxkBAAEBH8xin1P4sM9rspV0wcd9uAvHLFkoSwAC_wcAAs6U-FR6JwIKrfGfvCQE"]
     
