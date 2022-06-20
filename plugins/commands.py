@@ -1,8 +1,8 @@
 import os
+import random
 from config import Config
 from .fonts import Fonts
 from pyrogram import Client, filters
-from vars import var
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -18,8 +18,8 @@ async def start(c, m):
  Just send your Text and see what happens...😁
  
  
-Powered by : @SLBotOfficial
 Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/ImDark_Empire)
+Powered by :[Team SL Bots🇱🇰](https://t.me/SLBotOfficial)
 
 
 
@@ -35,6 +35,13 @@ Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/ImDark_Empi
             InlineKeyboardButton('Follow me on Github', url=f"https://github.com/DARKEMPIRESL")
         ]
     ]
+    
+    STICKERS = ["CAACAgUAAxkBAAEBH8Bin1OzuCzYzLOa9ZBiwK7026VX_QACCwUAAqp1AAFVU_BXBmgkKpwkBA", "CAACAgUAAxkBAAEBH8xin1P4sM9rspV0wcd9uAvHLFkoSwAC_wcAAs6U-FR6JwIKrfGfvCQE"]
+    
+    STICKER = random.choice(STICKERS)
+    
+    await m.reply_sticker(STICKER)
+    
     await m.reply_text(
         text=text,
         reply_markup=InlineKeyboardMarkup(buttons)
