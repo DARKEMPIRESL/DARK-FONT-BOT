@@ -126,7 +126,7 @@ class Fonts:
         }
         for i, j in style.items():
             text = text.replace(i, j)
-        return text
+        return text 
 
     def serief(text):
         style = {
