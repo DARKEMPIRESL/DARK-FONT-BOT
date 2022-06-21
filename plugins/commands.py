@@ -7,41 +7,6 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
-@Client.on_message(filters.command('start'))
-async def start(c, m):
-    owner = await c.get_users(int(OWNER_ID))
-    owner_username = owner.username if owner.username else 'ImDark_Empire'
-
-    # start text
-    text = f"""😎Hey! {m.from_user.mention(style='md')},
-
- ** I am Font Gen Bot**with many advanced features. 
- Just send your Text and see what happens...😁
- 
- 
-Devoloper : [𝕯𝖆𝖗𝖐 𝕰𝖒𝖕𝖎𝖗𝖊](https://t.me/ImDark_Empire)
-Powered by :[Team SL Bots🇱🇰](https://t.me/SLBotOfficial)
-
-
-
-"""
-
-    # Buttons
-    buttons = Data.buttons
-    
-    STICKERS = ["CAACAgUAAxkBAAEBH8Bin1OzuCzYzLOa9ZBiwK7026VX_QACCwUAAqp1AAFVU_BXBmgkKpwkBA", "CAACAgUAAxkBAAEBH8xin1P4sM9rspV0wcd9uAvHLFkoSwAC_wcAAs6U-FR6JwIKrfGfvCQE"]
-    
-    STICKER = random.choice(STICKERS)
-    
-    await m.reply_sticker(STICKER)
-    
-    await m.reply_text(
-        text=text,
-        reply_markup=InlineKeyboardMarkup(buttons)
-    )
-
-
-
 @Client.on_message(filters.private & filters.incoming & filters.text)
 async def style_buttons(c, m, cb=False):
     buttons = [[
