@@ -1,4 +1,5 @@
 from Data import Data
+import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
 
@@ -12,7 +13,7 @@ async def start(bot, msg):
     
   STICKER = random.choice(STICKERS)
     
-await msg.reply_sticker(STICKER)
+await bot.reply_sticker(STICKER)
 await bot.send_message(
 		  msg.chat.id,
 		  Data.START.format(msg.from_user.mention, mention),
