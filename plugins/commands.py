@@ -1,8 +1,8 @@
 import os
 import random
-from config import OWNER_ID
+import Config
 from Data import Data
-from .fonts import Fonts
+from plugins.fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
