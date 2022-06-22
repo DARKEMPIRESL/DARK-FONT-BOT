@@ -12,7 +12,6 @@ if ENVIRONMENT:
     DATABASE_URL = os.environ.get('DATABASE_URL', None)
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")  # Sqlalchemy dropped support for "postgres" name.
     # https://stackoverflow.com/questions/62688256/sqlalchemy-exc-nosuchmoduleerror-cant-load-plugin-sqlalchemy-dialectspostgre
-    OWNER_ID = os.environ.get('OWNER_ID', None)
 
 else:
     # Fill the Values
@@ -21,6 +20,5 @@ else:
     BOT_TOKEN = ""
     DATABASE_URL = ""
     DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
-    OWNER_ID = ""
 
 DEVS = [1120271521]
