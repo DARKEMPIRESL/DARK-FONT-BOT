@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton
 
 class Data:
     # Start Message
-    START = """😎Hey! {m.from_user.mention(style='md')},
+    START = """😎Hey!
 
  ** I am Font Gen Bot**with many advanced features. 
  Just send your Text and see what happens...😁
@@ -19,7 +19,7 @@ class Data:
     ABOUT = """
 **About This Bot** 
 Bot created by @SLBotOfficial
-Source Code : [Click Here](https://github.com/DARKEMPIRESL/Anonymous-BotV2)
+Source Code : [Click Here](https://github.com/DARKEMPIRESL/DARK-FONT-BOT)
 Framework : [Pyrogram](docs.pyrogram.org)
 Language : [Python](www.python.org)
 Developer : @ImDark_Empire
